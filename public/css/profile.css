@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans:wght@300&family=PT+Sans&family=Roboto:ital,wght@0,700;0,300;1,100&family=Sawarabi+Gothic&display=swap');
+*{
+    margin: 0;
+}
+body{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-family: 'Roboto';
+}
+
+.sidebar {
+    width: 100%;
+      height: auto;
+      position: fixed;
+      bottom: 0;
+      background-color: #f1f1f1;
+      opacity: .9;
+  }
+  
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    /* margin-top: 8px; */
+  }
+   
+  .sidebar a.active {
+    background-color: rgb(230, 242, 252);
+    transition: .3s;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: rgb(190, 226, 255);
+    transition: .3s;
+    color: black;
+  }
+  
+  div.content {
+    margin-left: 100px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: fixed;
+      bottom: 0;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+    .link-container{
+      margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    }
+  }
+  .link-container{
+    margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  }
+  .navigation-icon{
+      height: 27px;
+      width: 27px;
+    }
+    
+    .content{
+        margin: 0;
+        padding: 0;
+    }
+    .upperApp{
+        /* position: fixed; */
+        width: 100%;
+        height: 25%;
+        background-color: rgb(255, 176, 57);
+        margin: 0;
+        padding-left: 15vw;
+    }
+    .avatarIcon{
+        height: auto;
+        position: relative;
+        top: 130px;
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        width: auto;
+        padding: 0;
+        box-shadow: 0 0 15px 4px rgb(199, 199, 199);
+    }
+    .name{
+        font-size: 48pt;
+        margin-top: 20px;
+    }
+    .lowerApp{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 500px;
+        background-color: none;
+    }
+    .leftApp{
+        height: 100%;
+        width: 50%;
+        text-align: center;
+        margin-top: 10vh;
+        background-color: none;
+    }
+    .rightApp{
+        height: 100%;
+        width: 50%;
+        background-color: none;
+    }
+    @media screen and (max-width: 780px) {
+        .avatarIcon{
+            height: auto;
+            max-height: 150px;
+            display: none;
+            /* position: absolute; */
+            top: 130px;
+            max-width: 150px;
+            width: auto;
+            /* display: flex; */
+            justify-content: center;
+            margin: auto;
+        }
+        .upperApp{
+            padding-left: 0;
+            height: 20%;
+        }
+        .lowerApp{
+            display: flex;
+            flex-direction: column;
+        }
+        .name{
+            font-size: 40pt;
+        }
+        .leftApp{height: 10%; width: 100%;}
+        .rightApp{
+            width: 100%;
+            height: 90%;
+            text-align: center;
+        }
+    }
+    
+    
